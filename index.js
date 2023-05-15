@@ -4,7 +4,7 @@ const numbers = [1, 2, 3, 4, 5];
 // write code to create a new array where each
 // number is multiplied by 2 using the map method.
 // ============== Your answer here:
-const multiNumber = (element) => numbers.map((element) => element * 2);
+const multiNumber = (num) => num.map((element) => element * 2);
 console.log("The numbers array multiplied by 2", multiNumber(numbers));
 // ==============
 
@@ -15,7 +15,7 @@ const names = ["Alice", "Bob", "Charlie"];
 // converted to uppercase using the map method.
 // ============== Your answer here:
 
-const uppercase = (element) => names.map((element) => element.toUpperCase());
+const uppercase = (name) => name.map((element) => element.toUpperCase());
 console.log("names in upper case", uppercase(names));
 // ==============
 
@@ -26,7 +26,7 @@ const numbers2 = [1, 4, 9, 16, 25];
 //  number is squared using the map method.
 // ============== Your answer here:
 
-const squaredNumber = (element) => numbers2.map((element) => element ** 2);
+const squaredNumber = (number) => number.map((element) => element ** 2);
 console.log("The squared array ", squaredNumber(numbers2));
 // =========
 
@@ -36,7 +36,7 @@ const names2 = ["John", "Jane", "Tom"];
 // write code to create a new array where each name
 // is appended with " Smith" using the map method.
 // ============== Your answer here:
-const appendedWith = (element) => names2.map((element) => element + " Smith ");
+const appendedWith = (name) => name.map((element) => element + " Smith ");
 console.log(appendedWith(names2));
 
 // ==============
@@ -47,7 +47,7 @@ const numbers3 = [2, 4, 6, 8, 10];
 //  write code to create a new array where each
 // number is divided by 2 using the map method.
 // ============== Your answer here:
-const dividedBy2 = (element) => numbers3.map((element) => element / 2);
+const dividedBy2 = (number) => number.map((element) => element / 2);
 console.log(dividedBy2(numbers3));
 // ==============
 
@@ -57,8 +57,8 @@ const fruits = ["apple", "banana", "orange"];
 //  write code to create a new array where each fruit
 //  name is capitalized using the map method. Ex, Apple ...
 // ============== Your answer here:
-const capitalized = (element) =>
-  fruits.map(
+const capitalized = (fruit) =>
+  fruit.map(
     (element) => element.charAt().toLocaleUpperCase() + element.slice(1)
   );
 console.log(capitalized(fruits));
